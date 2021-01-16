@@ -6,7 +6,7 @@
 <ul>
     <li>App de Desenvolvimento/para rodar o projeto : NetBeans ou Eclipse
     </li>
-    <li>App do Banco de Dados: MySQL Adiministrator, aqui é necessário que você carregue dentro o arquivo banco de dados de cada projeto que deseja rodar/ver</li>
+    <li>App do Banco de Dados: MySQL Adiministrator, aqui é necessário que você carregue dentro o arquivo do banco de dados de cada projeto que deseja rodar/ver (que esta na pasta de cada um dos projetos)</li>
 </ul>
 
 <br>
