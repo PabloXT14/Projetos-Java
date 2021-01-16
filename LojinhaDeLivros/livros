@@ -1,0 +1,114 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.44-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema livros
+--
+
+CREATE DATABASE IF NOT EXISTS livros;
+USE livros;
+
+--
+-- Definition of table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+CREATE TABLE `clientes` (
+  `codigo` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `idade` int(3) unsigned NOT NULL,
+  `estado` varchar(2) NOT NULL,
+  `cidade` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `celular` varchar(11) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `clientes`
+--
+
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` (`codigo`,`nome`,`sexo`,`idade`,`estado`,`cidade`,`email`,`celular`) VALUES 
+ (6,'Vanessa','f',19,'sp','Rio Claro','vanessa@gmail.com','19123465537'),
+ (7,'Fred','m',30,'sp','Piracicaba','fred@gmail.com','19654276542'),
+ (8,'Paloma','f',24,'sp','Leme','paloma@gmail.com','19752865730'),
+ (9,'Daniel','m',34,'rj','Rio Claro','daniel@gmail.com','21532654378'),
+ (10,'Laisla','f',23,'sc','Florianópolis','laisla@gmail.com','47654789065'),
+ (11,'Paulo','m',25,'mg','Mato Verde','paulo@gmail.com','31245709834'),
+ (12,'Wenes','m',22,'df','Brasília','wenes@gmail.com','61367934789'),
+ (13,'Priscila','f',34,'go','Goiânia','priscila@gmail.com','62567435687'),
+ (14,'Windersson','m',24,'pi','Teresina','windersson@gmail.com','8623467398'),
+ (15,'Dudu','m',35,'ce','Fortaleza','dudu@gmail.com','85367558369'),
+ (16,'Marina','f',18,'sp','Santos','marina@gmail.com','19427863498'),
+ (17,'Luiz','m',34,'rj','Rio de Janeiro','luiz@gmail.com','21452389067'),
+ (18,'Amanda','f',27,'rj','Niterói','amanda@gmail.com','24237864908'),
+ (19,'Aparecida','f',54,'es','Vitória','aparecida@gmail.com','28345299870');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `produtos`
+--
+
+DROP TABLE IF EXISTS `produtos`;
+CREATE TABLE `produtos` (
+  `codigo` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `produto` varchar(45) NOT NULL,
+  `marca` varchar(45) NOT NULL,
+  `valor` double NOT NULL,
+  `estoque` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `produtos`
+--
+
+/*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
+INSERT INTO `produtos` (`codigo`,`produto`,`marca`,`valor`,`estoque`) VALUES 
+ (4,'Os Lusíadas (Luís de Camões)','Scipione',4,35),
+ (8,'Dom Quixote (Miguel de Servantes)','Biblioteca Folha',7,45),
+ (9,'A Divina Comédia (Dante Aligheri)','Ciranda Cultural',12.5,37),
+ (10,'Iracema (José de Alencar)','Ediouro',4,56),
+ (11,'Sermões Escolhidos (Pa. Antônio Vieira)','Martin Claret',8.75,233),
+ (12,'Os Miseráveis (Victor Hugo)','Circulo do Livro',7,100),
+ (13,'Urupês (Monteiro Lobato)','Brasiliense',6,247),
+ (14,'Os Sertões (Euclides da Cunha)','Ediouro',10,114),
+ (15,'Dom Casmurro (Machado de Assis)','Abril Cultura',4,227),
+ (16,'Moby Dick (Herman Melville)','Scipione',7.9,214),
+ (17,'O Pequeno Príncipe (Antoine de Saint)','Agir',8,90),
+ (18,'Romeu e Julieta (Shakespeare)','Victor Civita',4,143),
+ (19,'Os Três Mosqueteiros (Alexandre Dumas)','Saraiva',6.6,49),
+ (20,'Alice no País das Maravilhas (Lewis Carroll)','Melhoramentos',4,143),
+ (21,'A Droga da Obediência (Pedro Bandeira)','Moderna',6,45),
+ (22,'O Príncipe (Maquiavel)','Principis Ciranda',7.9,200),
+ (23,'A República (Platão)','Escala Educacional',10,116),
+ (24,'Crítica da Razão Pura (Immanuel Kant)','Lafonte',14.4,232),
+ (25,'A Revolução dos Bichos (George Orwell)','Globo',14.9,135);
+/*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
