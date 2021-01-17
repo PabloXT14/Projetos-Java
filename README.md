@@ -17,5 +17,8 @@
 <br>
 
 <h2>Projeto Loja de Beleza</h2>
+<p>Formulário de Produtos</p>
 <img src="Gif-Projetos/projeto-Loja_Beleza-1.gif">
+<p>Formulário de Clientes</p>
+<img scr="Gif-Projetos/projeto-Loja_Beleza-2.gif">
 
