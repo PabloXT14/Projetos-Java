@@ -13,3 +13,9 @@
 
 <h2>Projeto Lojinha de Livros</h2>
 <img src="Gif-Projetos/projeto-Loja_Livros.gif">
+
+<br>
+
+<h2>Projeto Loja de Beleza</h2>
+<img src="Gif-Projetos/projeto-Loja_Beleza-1">
+

@@ -1,0 +1,99 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.44-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema beleza
+--
+
+CREATE DATABASE IF NOT EXISTS beleza;
+USE beleza;
+
+--
+-- Definition of table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+CREATE TABLE `clientes` (
+  `codigo` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `sexo` varchar(1) NOT NULL,
+  `idade` varchar(3) NOT NULL,
+  `estado` varchar(2) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `celular` varchar(11) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `clientes`
+--
+
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` (`codigo`,`nome`,`sexo`,`idade`,`estado`,`email`,`celular`) VALUES 
+ (3,'Pablo','m','18','sp','pabloxt14@gmail.com','19913643789'),
+ (4,'Alan','m','25','rj','alan@gmail.com','21585578575'),
+ (5,'Vanessa','f','20','sp','vanessa@gmail.com','19913643589'),
+ (6,'Vitória','f','23','rj','vitoriadf@gmail.com','21914643789'),
+ (7,'Maria','f','22','es','mariad@gmail.com','27913643783'),
+ (8,'Carlos','m','18','sp','carlosnemeu@gmail.com','19900743785'),
+ (10,'Felipe','m','23','ba','felipe@gmail.com','71913643789'),
+ (11,'Fernanda Lima','f','19','ac','fernanada@gmail.com','68971565600'),
+ (12,'Domingos','m','40','sp','domingosalan4@gmail.com','19913634382'),
+ (13,'Pabla','f','37','sp','pablafre@gmail.com','19913634833');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+
+
+--
+-- Definition of table `produtos`
+--
+
+DROP TABLE IF EXISTS `produtos`;
+CREATE TABLE `produtos` (
+  `codigo` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `produto` varchar(45) NOT NULL,
+  `marca` varchar(45) NOT NULL,
+  `valor` double NOT NULL,
+  `estoque` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `produtos`
+--
+
+/*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
+INSERT INTO `produtos` (`codigo`,`produto`,`marca`,`valor`,`estoque`) VALUES 
+ (2,'Paleta de Sombra','MakeB',24.99,25),
+ (3,'Batom','MakeB',19.9,100),
+ (4,'Delineador Líquido','MAC',16.99,87),
+ (5,'Pó Iluminador Rosto e Corpo','MAC',39.99,50),
+ (6,'Gota de Unicórnio','MakeB',24.99,47),
+ (7,'Sombra Líquida','Mariana SAAD BY',35.9,53),
+ (8,'Kit 10 Pares de Sílios','MEGA',21.9,29),
+ (9,'Base Matte','Tracta',39.9,37),
+ (10,'Pó Facil Solto','Boca Rosa',45.9,28);
+/*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
