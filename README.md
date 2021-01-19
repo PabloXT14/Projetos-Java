@@ -1,10 +1,7 @@
 # Projetos-Java
  Neste repositório estão contidos arquivos/projetos de estudo sobre a linguagem Java
  <br>
-<h2>
-<g-emoji class="g-emoji" alias="gear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2699.png">⚙</g-emoji>
-Como Executar os Projetos
-</h2>
+<h2>⚙Como Executar os Projetos</h2>
 <p> Para rodar os projetos é necessário ter instalado em sua máquina:<p>
 <ul>
     <li>App de Desenvolvimento/para rodar o projeto : NetBeans ou Eclipse
@@ -14,18 +11,12 @@ Como Executar os Projetos
 
 <br>
 
-<h2>
-<g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>
-Projeto Lojinha de Livros
-</h2>
+<h2>📚Projeto Lojinha de Livros</h2>
 <img src="Gif-Projetos/projeto-Loja_Livros.gif">
 
 <br>
 
-<h2>
-<g-emoji class="g-emoji" alias="computer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png">💻</g-emoji>
-Projeto Loja de Beleza
-</h2>
+<h2>💄Projeto Loja de Beleza</h2>
 <p>Formulário de Produtos</p>
 <img src="Gif-Projetos/projeto-Loja_Beleza-1.gif">
 <p>Formulário de Clientes</p>
